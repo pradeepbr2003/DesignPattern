@@ -9,6 +9,8 @@ import design.pattern.decorator.DecoratorPattern;
 import design.pattern.facade.FacadePattern;
 import design.pattern.factory.FactoryPattern;
 import design.pattern.ioc.IOCPattern;
+import design.pattern.observer.example1.ObserverPatternOne;
+import design.pattern.observer.example2.ObserverPatternTwo;
 
 public interface IDesignPattern {
 
@@ -76,6 +78,22 @@ public interface IDesignPattern {
         System.out.println("FACTORY PATTERN");
         System.out.println(line);
         FactoryPattern.main(null);
+        System.out.println(line);
+    }
+
+    static void OBSERVER1() {
+        System.out.println(line);
+        System.out.println("OBSERVER PATTERN - 1");
+        System.out.println(line);
+        ObserverPatternOne.main(null);
+        System.out.println(line);
+    }
+
+    static void OBSERVER2() {
+        System.out.println(line);
+        System.out.println("OBSERVER PATTERN - 2");
+        System.out.println(line);
+        ObserverPatternTwo.main(null);
         System.out.println(line);
     }
 }
